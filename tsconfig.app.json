@@ -18,10 +18,16 @@
     "jsx": "react-jsx",
 
     /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "strict": true, // The strict flag enables a wide range of type checking behavior that results in stronger guarantees of program correctness
+    "noUnusedLocals": true, // Report errors on unused local variables
+    "noUnusedParameters": true, // Report errors on unused parameters in functions.
+    "noFallthroughCasesInSwitch": true, // Report errors for fallthrough cases in switch statements
+    "allowUnreachableCode": false, // raises compiler errors about unreachable code
+    "allowUnusedLabels": false, // raises compiler errors about unused labels
+    "alwaysStrict": true, // Ensures that your files are parsed in the ECMAScript strict mode, and emit “use strict” for each source file
+    "exactOptionalPropertyTypes": true, // With exactOptionalPropertyTypes enabled, TypeScript applies stricter rules around how it handles properties on type or interfaces which have a ? prefix
+    "noImplicitOverride": true, // When working with classes which use inheritance, prevent overriding methodes by mistake by requiring the override keyword
+    "noUncheckedIndexedAccess": true // Turning on noUncheckedIndexedAccess will add undefined to any un-declared field in the type that have index signature
   },
   "include": ["src"]
 }
